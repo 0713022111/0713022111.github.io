@@ -1,7 +1,7 @@
 ---
 title: Highlight Test
-categories: Example
- - Test
+categories: 
+ - Example
 tags:
 ---
 
