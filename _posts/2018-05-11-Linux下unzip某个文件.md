@@ -21,7 +21,7 @@ Archive:  angton-v2.2.9.zip
 ```
 ## unzip解压指定文件到指定目录
 ```shell
-unzip <Your zip file> "*mobile/要解压的文件" -d <要解压的目录> 
+unzip <zip file> "*mobile/要解压的文件" -d <要解压的目录> 
 ```
 e.g.
 ```shell 
