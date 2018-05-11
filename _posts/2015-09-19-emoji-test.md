@@ -1,5 +1,6 @@
 ---
 title: Emoji Test
+categories: Example
 tags:
 ---
 

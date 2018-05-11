@@ -1,6 +1,6 @@
 ---
 title: Highlight Test
-categories:
+categories: Example
  - Test
 tags:
 ---
