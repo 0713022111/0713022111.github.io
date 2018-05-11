@@ -39,3 +39,4 @@ extracting: ../download/angton-v2.2.9/sql/上线sql.zip
 >-l : 小写的l;  
 >-d :  -d 参数后面跟上你要解压文件到哪个目录;
 
+
