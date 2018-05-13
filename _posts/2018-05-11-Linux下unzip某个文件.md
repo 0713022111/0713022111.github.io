@@ -1,6 +1,6 @@
 ---
 title: Linux下unzip解压指定文件到指定目录
-description: > Linux下unzip查看包内文件并将指定文件解压到指定目录下
+description: Linux下unzip查看包内文件并将指定文件解压到指定目录下
 categories:
  - Linux
 tags:
