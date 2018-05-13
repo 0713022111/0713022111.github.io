@@ -6,7 +6,8 @@
 # Site
 title: 飘花如梦
 subtitle:
-description: 你未看此花时，此花与汝心同归于寂；你来看此花时，则此花颜色一时明白起来。
+description: 你未看此花时，此花与汝心同归于寂；
+你来看此花时，则此花颜色一时明白起来。
 author: Lyvon
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -605,10 +606,10 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false
