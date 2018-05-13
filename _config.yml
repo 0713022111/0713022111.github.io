@@ -6,7 +6,7 @@
 # Site
 title: 飘花如梦
 subtitle:
-description:
+description: 你未看此花时，此花与汝心同归于寂；你来看此花时，则此花颜色一时明白起来。
 author: Lyvon
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -677,14 +677,14 @@ vendors:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
-  canvas_nest:
+  canvas_nest: true
 
   # three
   three:
 
   # three_waves
   # https://github.com/jjandxa/three_waves
-  three_waves:
+  three_waves: true
 
   # three_waves
   # https://github.com/jjandxa/canvas_lines
