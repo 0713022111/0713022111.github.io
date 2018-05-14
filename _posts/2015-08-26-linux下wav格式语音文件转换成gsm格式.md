@@ -3,7 +3,7 @@ title: Linux下wav格式语音文件转换为gsm格式
 description: Linux下wav格式语音文件转换为gsm格式
 categories:
  - Linux
- -asterisk
+ - asterisk
 tags:
  - Linux
  - asterisk
