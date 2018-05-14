@@ -9,7 +9,7 @@ tags:
  - asterisk
 ---
 
-使用linux自带的sox工具转换：
+使用linux自带的```sox```工具转换：
 ```shell
 sox inputfile.wav -r 8000 -c 1 outputfile.gsm
 ```
