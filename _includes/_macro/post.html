@@ -255,6 +255,7 @@
     {% endunless %}
 
     <div class="post-body{% if site.han %} han-init-context{% endif %}" itemprop="articleBody">
+      <hr>
 
       {% comment %} Gallery support {% endcomment %}
       {% if post.photos and post.photos.size > 0 %}
@@ -279,7 +280,10 @@
 
       {% if is_index %}
         {% if post.description and site.excerpt_description %}
+          <blockquote>
+          <p>
           {{ post.description }}
+          </p></blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="{{ post.url | relative_url }}">
