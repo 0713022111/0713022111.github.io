@@ -320,9 +320,9 @@
     </div>
 
     <div>
-      {% if not is_index %}
+      {% unless is_index %}
         {% include _macro/passage-end-tag.html %}
-      {% endif %}
+      {% endunless %}
     </div>
     <div>
       {% unless is_index %}
