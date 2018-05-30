@@ -6,7 +6,14 @@ code {
     //color: #FBBC05;
     background: #fbf7f8;
     margin: 2px;
+    border: 1px solid #ff7600;
 }
+
+.highlight pre code {
+     border: 0px solid #d6d6d6;
+}
+
+
 // 大代码块的自定义样式
 // .highlight, pre {
 //     margin: 5px 0;
