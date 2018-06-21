@@ -10,14 +10,10 @@ tags:
 ## 环境如下
 
 服务器 | IP 
-- | -: 
+- | -:- 
 IPCC | 192.168.1.16 
 cc | 192.168.1.17 
 
-服务器 | IP 
-- | -: 
-IPCC | 192.168.1.16 
-cc | 192.168.1.17  
 ## 编译安装Unison   
 Linux下通过源码包编译安装```Unison```时，需要用到Objective Caml compiler。  
 ### 编译安装ocaml  
