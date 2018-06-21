@@ -149,4 +149,8 @@ dns.expin.com.          86400   IN      A       192.168.1.8
 ;; ANSWER SECTION:
 bbs.expin.com.          86400   IN      A       192.168.1.8  
 ```  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/DNS1.png)  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/DNS2.png)  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/DNS3.png)  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/DNS4.png)  
 
