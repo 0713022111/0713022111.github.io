@@ -7,6 +7,12 @@ tags:
  - Linux
  - Unison
 ---  
+Name | Academy | score 
+- | :-: | -: 
+Harry Potter | Gryffindor| 90 
+Hermione Granger | Gryffindor | 100 
+Draco Malfoy | Slytherin | 90  
+
 | 服务器 | IP |  
 | - | :-: |  
 | IPCC | 192.168.1.16 |  
