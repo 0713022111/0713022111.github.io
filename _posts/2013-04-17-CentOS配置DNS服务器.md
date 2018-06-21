@@ -1,5 +1,5 @@
 ---
-title: CentOS配置DNS服务器
+title: CentOS搭建DNS服务器
 description: CentOS系统下搭建DNS服务器
 categories:
  - Linux
