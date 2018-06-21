@@ -9,11 +9,10 @@ tags:
 ---  
 ## 环境如下
 
-Name | Academy | score 
-- | :-: | -: 
-Harry Potter | Gryffindor| 90 
-Hermione Granger | Gryffindor | 100 
-Draco Malfoy | Slytherin | 90  
+服务器 | IP 
+- | -: 
+IPCC | 192.168.1.16 
+cc | 192.168.1.17 
 
 服务器 | IP 
 - | -: 
