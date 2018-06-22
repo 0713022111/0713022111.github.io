@@ -15,7 +15,7 @@ yum -y install vsftpd
 touch /var/log/vsftpd.log # 创建vsftp的日志文件  
 ```  
 ## 基于虚拟用户的FTP架设  
-1. 我们在/etc/vsftpd/vsftpd.conf中做如下CentOS FTP服务配置：  
+我们在/etc/vsftpd/vsftpd.conf中做如下CentOS FTP服务配置：  
 ```anonymous_enable=NO```设定不允许匿名访问；  
 ```local_enable=YES```设定本地用户可以访问；(注：如使用虚拟宿主用户，在该项目设定为NO的情况下所有虚拟用户将无法访问。)  
 ```chroot_list_enable=YES```使用户不能离开主目录；  
