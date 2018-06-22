@@ -15,10 +15,10 @@ tags:
 状态。最安全的状态是到服务器的Console上面操作，并且拔掉网线。  
 ## 修改MySQL的登录设置  
 ```shell  
-  vim /etc/my.cnf  
+[root@ipcc ~]# vim /etc/my.cnf  
 ```  
 在[mysqld]的段中加上一句：```skip-grant-tables```  
-例如：  
+eg.  
 ```shell  
 [mysqld] 
 datadir=/var/lib/mysql 
