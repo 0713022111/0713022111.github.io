@@ -15,14 +15,14 @@ yum -y install vsftpd
 touch /var/log/vsftpd.log # 创建vsftp的日志文件  
 ```  
 ## 基于虚拟用户的FTP架设  
-1)  我们在/etc/vsftpd/vsftpd.conf中做如下CentOS FTP服务配置：  
-```anonymous_enable=NO``` 设定不允许匿名访问  
-```local_enable=YES``` 设定本地用户可以访问。注：如使用虚拟宿主用户，在该项目设定为NO的情况下所有虚拟用户将无法访问。  
-```chroot_list_enable=YES``` 使用户不能离开主目录  
-```xferlog_file=/var/log/vsftpd.log``` 设定vsftpd的服务日志保存路径。注意，该文件默认不存在。必须要手动touch出来。  
-```ascii_upload_enable=YES```  
-```ascii_download_enable=YES``` 设定支持ASCII模式的上传和下载功能。  
-```pam_service_name=vsftpd``` PAM认证文件名。PAM将根据/etc/pam.d/vsftpd进行认证  
+1. 我们在/etc/vsftpd/vsftpd.conf中做如下CentOS FTP服务配置：  
+```anonymous_enable=NO```设定不允许匿名访问；  
+```local_enable=YES```设定本地用户可以访问；(注：如使用虚拟宿主用户，在该项目设定为NO的情况下所有虚拟用户将无法访问。)  
+```chroot_list_enable=YES```使用户不能离开主目录；  
+```xferlog_file=/var/log/vsftpd.log```设定vsftpd的服务日志保存路径；（注意，该文件默认不存在。必须要手动touch出来。）  
+```ascii_upload_enable=YES```；  
+```ascii_download_enable=YES```设定支持ASCII模式的上传和下载功能；  
+```pam_service_name=vsftpd```PAM认证文件名。PAM将根据/etc/pam.d/vsftpd进行认证；  
 以下这些是关于vsftpd虚拟用户支持的重要CentOS FTP服务配置项目。  
 默认vsftpd.conf中不包含这些设定项目，需要自己手动添加CentOS FTP服务配置。  
 ```guest_enable=YES``` 设定启用虚拟用户功能。  
@@ -46,12 +46,12 @@ pasv_enable=YES 启用FTP被动模式
 pasv_min_port=30000 设置被动模式开启的最大、最小端口号
 pasv_max_port=30999  
 ```  
-2)  创建chroot list，将用户ftp加入其中：  
+2. 创建chroot list，将用户ftp加入其中：  
 ```shell  
 touch /etc/vsftpd/chroot_list  
 echo ftp >> /etc/vsftpd/chroot_list  
 ```  
-3)  进行认证：  
+3. 进行认证：  
 首先，安装Berkeley DB工具，很多人找不到db_load的问题就是没有安装这个包。  
 ```shell  
 yum install db4 db4-utils  
