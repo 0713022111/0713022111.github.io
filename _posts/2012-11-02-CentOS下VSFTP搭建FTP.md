@@ -92,7 +92,7 @@ anon_other_write_enable=YES
 ```shell  
 mkdir /opt/var/ftp/ftpuser1（ftpuser2）  
 chmod 777 /opt/var/ftp/ftpuser1 （ftpuser2）         
-代表user，group ,others ,都有读写和可执行权限  
+#代表user，group ,others ,都有读写和可执行权限  
 service vsftpd start  
 ```  
 配置成功！  
