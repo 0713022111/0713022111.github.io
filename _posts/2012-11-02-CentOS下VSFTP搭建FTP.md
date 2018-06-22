@@ -18,8 +18,8 @@ touch /var/log/vsftpd.log # 创建vsftp的日志文件
 1)  我们在/etc/vsftpd/vsftpd.conf中做如下CentOS FTP服务配置：  
 ```anonymous_enable=NO``` 设定不允许匿名访问  
 ```local_enable=YES``` 设定本地用户可以访问。注：如使用虚拟宿主用户，在该项目设定为NO的情况下所有虚拟用户将无法访问。  
-```chroot_list_enable=YES``` 使用户不能离开主目录
-```xferlog_file=/var/log/vsftpd.log``` 设定vsftpd的服务日志保存路径。注意，该文件默认不存在。必须要手动touch出来  
+```chroot_list_enable=YES``` 使用户不能离开主目录  
+```xferlog_file=/var/log/vsftpd.log``` 设定vsftpd的服务日志保存路径。注意，该文件默认不存在。必须要手动touch出来。  
 ```ascii_upload_enable=YES```  
 ```ascii_download_enable=YES``` 设定支持ASCII模式的上传和下载功能。  
 ```pam_service_name=vsftpd``` PAM认证文件名。PAM将根据/etc/pam.d/vsftpd进行认证  
@@ -28,8 +28,8 @@ touch /var/log/vsftpd.log # 创建vsftp的日志文件
 ```guest_enable=YES``` 设定启用虚拟用户功能。  
 ```guest_username=ftp``` 指定虚拟用户的宿主用户。CentOS中已经有内置的ftp用户了  
 ```user_config_dir=/etc/vsftpd/vuser_conf``` 设定虚拟用户个人vsftp的CentOS FTP服务文件存放路径。  
-存放虚拟用户个性的CentOS FTP服务文件(配置文件名=虚拟用户名)
-# 其他内容可以参考修改，以下内容为必要的   
+存放虚拟用户个性的CentOS FTP服务文件(配置文件名=虚拟用户名)  
+其他内容可以参考修改，以下内容为必要的   
 ```shell  
 anonymous_enable=NO 
 local_enable=YES 
