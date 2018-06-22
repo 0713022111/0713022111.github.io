@@ -14,6 +14,7 @@ VSFTP是一个基于GPL发布的类Unix系统上使用的FTP服务器软件，�
 yum -y install vsftpd
 touch /var/log/vsftpd.log # 创建vsftp的日志文件  
 ```  
+  
 ## 基于虚拟用户的FTP架设  
 :point_right:我们在/etc/vsftpd/vsftpd.conf中做如下CentOS FTP服务配置    
 1）```anonymous_enable=NO```设定不允许匿名访问；  
