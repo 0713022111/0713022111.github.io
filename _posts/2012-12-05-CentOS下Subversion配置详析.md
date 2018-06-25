@@ -69,7 +69,7 @@ realm = repos
 ## 用户名口令文件  
 用户名口令文件由svnserve.conf的配置项password-db指定，缺省为conf目录中的passwd。该文件仅由一个[users]配置段组成。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_5.png)  
-[users]配置段的配置行格式如下：  
+**[users]**配置段的配置行格式如下：  
 ```shell  
 <用户名> = <口令>
 ```  
