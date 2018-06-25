@@ -47,7 +47,7 @@ libproxy-python-0.3.0-3.el6_3.x86_64.rpm
 执行此命令后svn自动在repos目录下添加必须的配置文件。 
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_4.png )   
 需要配置的文件位于conf目录下：```authz```，```passwd```，```svnserve.conf```。  
-关于这三个文件的配置可查看文件【Subversion配置文件详析_20121204.docx】。  
+关于这三个文件的配置可查看文件 [【ContOS下Subversion配置详析】](https://0713022111.github.io/linux/2012/12/05/CentOS%E4%B8%8BSubversion%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%9E%90/)。  
 注意:版本库不同于一般的文件夹, 直接在操作系统上新建文件无法被SVN识别, 必须使用import等命令将文件导入版库。此为svn内部指令，create用于新建版本库。请使用svn help查看详细说明。  
 ## 启动服务  
 ```shell  
