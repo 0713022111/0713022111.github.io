@@ -21,7 +21,7 @@ svn服务配置文件，该文件版本库目录的conf目录下，文件名为s
 ## svn服务配置文件  
 svn服务配置文件为版本库目录中的文件conf/svnserve.conf。该文件仅由一个[general]配置段组成。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_3.png)  
-[general]配置段中配置行格式如下：  
+**[general]**配置段中配置行格式如下：  
 <配置项> = <值>  
 配置项分为以下5项：  
 anon-access 控制非鉴权用户访问版本库的权限。取值范围为"write"、"read"和"none"。
