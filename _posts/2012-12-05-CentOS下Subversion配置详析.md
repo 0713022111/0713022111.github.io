@@ -21,7 +21,7 @@ svn服务配置文件，该文件版本库目录的conf目录下，文件名为s
 ## svn服务配置文件  
 svn服务配置文件为版本库目录中的文件conf/svnserve.conf。该文件仅由一个[general]配置段组成。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_3.png)  
-**[general]**配置段中配置行格式如下：  
+**[general]**配置段中配置行格式如下:  
 <配置项> = <值>  
 配置项分为以下5项：  
 anon-access 控制非鉴权用户访问版本库的权限。取值范围为"write"、"read"和"none"。
@@ -40,7 +40,8 @@ realm 指定版本库的认证域，即在登录时提示的认证域名称。�
 认证域相同，建议使用相同的用户名口令数据文件。  
 缺省值：一个UUID(Universal Unique IDentifier，全局唯一标示)。  
 说明:版本库认证域  
-在使用svn客户端访问svnserve服务器时，若需要用户登录，则提示信息如下：  
+在使用svn客户端访问svnserve服务器时，若需要用户登录，则提示信息如下:  
+
 ```shell  
 [root@centos_1_8 conf]# svn list svn://192.168.1.8/CallCenter
 Authentication realm: 0d545a49-4038-0410-99b4-c66dc73f754e
