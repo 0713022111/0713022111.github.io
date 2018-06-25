@@ -16,6 +16,7 @@ tags:
   
 ## Subversion安装  
 安装svn需要以下几个安装包，如下图  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_1.png )
 注：其中libproxy-0.3.0-3.el6_3.x86_64.rpm  
 libproxy-bin-0.3.0-3.el6_3.x86_64.rpm  
 libproxy-python-0.3.0-3.el6_3.x86_64.rpm  
