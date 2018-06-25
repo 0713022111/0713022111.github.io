@@ -35,10 +35,10 @@ svn服务配置文件为版本库目录中的文件conf/svnserve.conf。该文�
 ```password-db``` 指定用户名口令文件名。除非指定绝对路径，否则文件位置为相对conf
 目录的相对路径。  
 缺省值：passwd  
-authz-db 指定权限配置文件名，通过该文件可以实现以路径为基础的访问控制。
+```authz-db``` 指定权限配置文件名，通过该文件可以实现以路径为基础的访问控制。
 除非指定绝对路径，否则文件位置为相对conf目录的相对路径。  
 缺省值：authz  
-realm 指定版本库的认证域，即在登录时提示的认证域名称。若两个版本库的
+```realm``` 指定版本库的认证域，即在登录时提示的认证域名称。若两个版本库的
 认证域相同，建议使用相同的用户名口令数据文件。  
 缺省值：一个UUID(Universal Unique IDentifier，全局唯一标示)。  
 说明:版本库认证域  
@@ -50,8 +50,10 @@ Authentication realm: 0d545a49-4038-0410-99b4-c66dc73f754e
 Password for root:  
 ```  
 在上述第2行"Authentication realm: "之后显示的字符串为认证域名称。如果在配置文件中为设定认证域，就会提示一个UUID，如上述所示。  
-如果在配置文件中指定了如下配置项：  
+如果在配置文件中指定了如下配置项： 
+```shell  
 realm = repos  
+```  
 将在svn客户端提示如下：  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_4.png)  
 例1：svn服务配置文件conf/svnserve.conf的内容如下：  
@@ -81,9 +83,9 @@ gubin = gubin_passwd
 ```  
 该文件中配置了几个用户，其中用户名"dihaiying"和"gubin"。其中" dihuaiying "用户的口令为" dihuaiying_passwd"；" gubin "用户的口令为" gubin_passwd"。
 ## 权限配置文件  
-权限配置文件由svnserve.conf的配置项authz-db指定，缺省为conf目录中的authz。该配置文件由一个[groups]配置段和若干个版本库路径权限段组成。  
+权限配置文件由svnserve.conf的配置项```authz-db```指定，缺省为conf目录中的authz。该配置文件由一个[groups]配置段和若干个版本库路径权限段组成。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_6.png)  
-[groups]配置段中配置行格式如下：  
+**[groups]**配置段中配置行格式如下：  
 ```shell  
 <用户组> = <用户列表>  
 ```  
@@ -100,11 +102,11 @@ gubin = gubin_passwd
 <用户组> = <权限>  
 * = <权限>  
 ```  
-其中，"*"表示任何用户；权限的取值范围为''、'r'和'rw'，''表示对该版本库路径无任何权限，'r'表示具有只读权限，'rw'表示有读写权限。  
+其中，```*```表示任何用户；权限的取值范围为''、'r'和'rw'，''表示对该版本库路径无任何权限，'r'表示具有只读权限，'rw'表示有读写权限。  
 注意：每行配置只能配置单个用户或用户组。  
 例3：权限配置文件conf/authz的内容如下：  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_7.png)    
 在上述配置文件中，定义了一个用户组"admin"，该用户组包含用户"gubin"和"lixiaolong"。然后定义了2个版本库路径权限段。其中，版本库"admintools"只有用户组"admin"可读写，其他用户无任何权限；版本库"test"中路径"/home/gubin"只有用户" gubin "有读写权限，其他用户只有可读权限。  
 ## 总结  
 在本文中，详细介绍了svnserve程序的3个配置文件。SVN管理员可以通过这3个配置文件设置svnserve服务的用户名口令，以及对版本库路径的访问权限。这些配置文件保存后就立即生效，不需要重启svnserve服务。  
-需要强调的是本文介绍的配置文件只对svnserve服务有效，即客户端通过前缀为svn://或svn+ssh://的URL访问版本库有效，而对通过前缀http://、https://或file:///的URL无效。  
+需要强调的是本文介绍的配置文件只对svnserve服务有效，即客户端通过前缀为```svn://```或```svn+ssh://```的URL访问版本库有效，而对通过前缀http://、https://或file:///的URL无效。  
