@@ -15,9 +15,9 @@ svnserve可以通过配置文件来设置用户和口令，以及按路径控制
 ## svnserve配置文件概述  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_2.png)  
 svnserve配置文件通常由以下3个文本文件组成：
-svn服务配置文件，该文件版本库目录的conf目录下，文件名为svnserve.conf。  
-用户名口令文件，该文件名在文件svnserve.conf中指定，缺省为同目录下的passwd。  
-权限配置文件，该文件名也在文件svnserve.conf中指定，缺省为同目录下的authz。  
+svn服务配置文件，该文件版本库目录的conf目录下，文件名为```svnserve.conf```。  
+用户名口令文件，该文件名在文件svnserve.conf中指定，缺省为同目录下的```passwd```。  
+权限配置文件，该文件名也在文件svnserve.conf中指定，缺省为同目录下的```authz```。  
 ## svn服务配置文件  
 svn服务配置文件为版本库目录中的文件conf/svnserve.conf。该文件仅由一个[general]配置段组成。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_3.png)  
@@ -26,13 +26,13 @@ svn服务配置文件为版本库目录中的文件conf/svnserve.conf。该文�
 <配置项> = <值>  
 ```  
 配置项分为以下5项：  
-anon-access 控制非鉴权用户访问版本库的权限。取值范围为"write"、"read"和"none"。
+```anon-access``` 控制非鉴权用户访问版本库的权限。取值范围为"write"、"read"和"none"。
 即"write"为可读可写，"read"为只读，"none"表示无访问权限。  
 缺省值：read  
-auth-access 控制鉴权用户访问版本库的权限。取值范围为"write"、"read"和"none"。
+```auth-access``` 控制鉴权用户访问版本库的权限。取值范围为"write"、"read"和"none"。
 即"write"为可读可写，"read"为只读，"none"表示无访问权限。  
 缺省值：write  
-password-db 指定用户名口令文件名。除非指定绝对路径，否则文件位置为相对conf
+```password-db``` 指定用户名口令文件名。除非指定绝对路径，否则文件位置为相对conf
 目录的相对路径。  
 缺省值：passwd  
 authz-db 指定权限配置文件名，通过该文件可以实现以路径为基础的访问控制。
