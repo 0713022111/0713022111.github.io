@@ -9,7 +9,8 @@ tags:
  - Redis
 ---  
 ## 前期准备 
-为了让redis-server能在系统启动时自动运行，需要将redis服务作为守护进程（daemon）来运行，找到配置文件redis.conf的文件，这个文件是redis服务运行时加载的配置，需要修改daemonize的值：  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/redis_boot.png "Redis Info")  
+&emsp;&emsp;为了让redis-server能在系统启动时自动运行，需要将redis服务作为守护进程（daemon）来运行，找到配置文件redis.conf的文件，这个文件是redis服务运行时加载的配置，需要修改daemonize的值：  
 ```shell  
 ...
 ################################# GENERAL #####################################
@@ -21,9 +22,9 @@ daemonize yes
 ...
 ```  
 另外需要准备如下参数：  
-:smile:```REDISPORT=6379```redis端口  
-:smile:```REDISPATH=/home/redis-stable/```redis路径所在  
-:smile:```CONF=/etc/redis.conf```redis配置文件所在  
+```REDISPORT=6379```redis端口  
+```REDISPATH=/home/redis-stable/```redis路径所在  
+```CONF=/etc/redis.conf```redis配置文件所在  
 ## 脚本  
 在```/etc/init.d```下创建脚本文件redis。  
 ```shell  
