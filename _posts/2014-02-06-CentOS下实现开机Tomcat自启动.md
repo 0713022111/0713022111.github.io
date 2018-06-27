@@ -57,6 +57,15 @@ case "$1" in
             kill -9 $P_ID
         fi
         ;;  
+
+    status)  
+        P_ID=`ps -ef | grep -w "$CATALANA_HOME" | grep -v "grep" | awk '{print $2}'`  
+        if [ -z $P_ID ]; then
+            echo -e "=== \e[00;31m$prog process not running\e[00m"
+        else
+            echo -e "=== \e[00;32m$prog process is running with pid:$P_ID\e[00m"
+        fi
+        ;; 
    
     restart)  
         echo -e "\e[00;32mStopping Tomcat...\e[00m"  
@@ -72,7 +81,7 @@ case "$1" in
         ;;
    
     *)  
-        echo -e "\e[00;31mUsage: $prog {start|stop|restart}\e[00m"  
+        echo -e "\e[00;31mUsage: $prog {start|stop|status|restart}\e[00m"  
         ;;  
 esac  
 exit 0  
