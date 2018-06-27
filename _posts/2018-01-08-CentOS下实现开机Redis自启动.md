@@ -22,9 +22,9 @@ daemonize yes
 ...
 ```  
 另外需要准备如下参数：  
-**REDISPORT=6379**redis端口  
-**REDISPATH=/home/redis-stable/**redis路径所在  
-**CONF=/etc/redis.conf**redis配置文件所在  
+**REDISPORT=6379**（redis端口）  
+**REDISPATH=/home/redis-stable/**（redis路径所在）  
+**CONF=/etc/redis.conf**（redis配置文件所在）  
 ## 脚本  
 在```/etc/init.d```下创建脚本文件redis。  
 ```shell  
