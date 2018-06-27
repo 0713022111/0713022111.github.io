@@ -8,7 +8,12 @@ tags:
  - Linux
  - Tomcat
 ---  
-  
+## 脚本文件  
+在```/etc/init.d```下创建脚本文件tomcat。  
+```shell  
+[root@ppp-2-85-227-23 ~]# vi tomcat  
+```  
+脚本如下：
 ```shell  
 #!/bin/bash  
 #  
@@ -67,5 +72,10 @@ case "$1" in
 esac  
 exit 0  
 ```  
-
-
+## 配置  
+```shell  
+[root@ppp-2-85-227-23 ~]# chmod +x /etc/init.d/tomcat   
+[root@ppp-2-85-227-23 ~]# chkconfig tomcat on  
+[root@ppp-2-85-227-23 ~]# chkconfig --list|grep tomcat
+tomcat           0:off   1:off   2:on    3:on    4:on    5:on    6:off
+[root@ppp-2-85-227-23 ~]# service tomcat start  
