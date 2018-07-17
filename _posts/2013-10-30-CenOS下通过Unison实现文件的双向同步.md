@@ -196,12 +196,12 @@ logfile = /home/expint/.unison/unison.log
 ```  
 相关注解如下：  
   
-1```force```表示会以本地所指定文件夹为标准，将该目录同步到远端。这里需要注意，如果指定了force参数，那么Unison就变成了单项同步了，也就是说会以force指定的文件夹为准进行同步，类似于rsync。  
-2```ignore = Path```表示忽略指定目录，即同步时不同步它。  
-```batch = true```，表示全自动模式，接受缺省动作，并执行。  
-```fastcheck = true``` 表示同步时仅通过文件的创建时间来比较，如果选项为false，Unison则将比较两地文件的内容。  
-```log = true``` 表示在终端输出运行信息。  
-```logfile``` 指定输出的log文件。  
+1、```force```表示会以本地所指定文件夹为标准，将该目录同步到远端。这里需要注意，如果指定了force参数，那么Unison就变成了单项同步了，也就是说会以force指定的文件夹为准进行同步，类似于rsync。  
+2、```ignore = Path```表示忽略指定目录，即同步时不同步它。  
+3、```batch = true```，表示全自动模式，接受缺省动作，并执行。  
+4、```fastcheck = true``` 表示同步时仅通过文件的创建时间来比较，如果选项为false，Unison则将比较两地文件的内容。  
+5、```log = true``` 表示在终端输出运行信息。  
+6、```logfile``` 指定输出的log文件。  
 ## Unison双向同步测试  
 首先分别在IPCC与cc的/home/expint/test目录下创建文件或目录，然后在IPCC上执行```unison```，接着如果在IPCC与cc上都能看到各自创建的文件，就说明同步成功。  
 分别在IPCC与cc上创建文件  
