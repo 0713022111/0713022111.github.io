@@ -153,7 +153,7 @@ expint@192.168.1.16’s password:
 ```shell  
 [expint@IPCC ~]$ unison /home/expint/test/ ssh://expint@192.168.1.17//home/expint/test/  
 [expint@cc ~]$ unison /home/expint/test/ ssh://expint@192.168.1.16//home/expint/test/  
-```shell  
+```  
 修改两台服务器的unison配置文件，输入以下内容  
 ```shell  
 [expint@IPCC ~]$ vim /home/expint/.unison/default.prf 
@@ -195,6 +195,7 @@ log = true
 logfile = /home/expint/.unison/unison.log  
 ```  
 相关注解如下：  
+  
 ```force```表示会以本地所指定文件夹为标准，将该目录同步到远端。这里需要注意，如果指定了force参数，那么Unison就变成了单项同步了，也就是说会以force指定的文件夹为准进行同步，类似于rsync。  
 ```ignore = Path```表示忽略指定目录，即同步时不同步它。  
 ```batch = true```，表示全自动模式，接受缺省动作，并执行。  
