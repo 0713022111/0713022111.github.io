@@ -49,12 +49,12 @@ pasv_enable=YES 启用FTP被动模式
 pasv_min_port=30000 设置被动模式开启的最大、最小端口号
 pasv_max_port=30999  
 ```  
-:point_right:创建chroot list，将用户ftp加入其中：  
+创建chroot list，将用户ftp加入其中：  
 ```shell  
 touch /etc/vsftpd/chroot_list  
 echo ftp >> /etc/vsftpd/chroot_list  
 ```  
-:point_right:进行认证：  
+进行认证：  
 首先，安装Berkeley DB工具，很多人找不到db_load的问题就是没有安装这个包。  
 ```shell  
 yum install db4 db4-utils  
