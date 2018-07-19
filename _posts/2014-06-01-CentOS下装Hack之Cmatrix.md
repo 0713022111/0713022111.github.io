@@ -8,8 +8,7 @@ tags:
  - Cmatrix
 ---  
 
-<video id="video" controls="" preload="none"
-        
+<video id="video" controls="" preload="none">
          <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" 
              type="video/mp4">
           <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" 
@@ -17,4 +16,6 @@ tags:
           <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" 
               type="video/ogg">
           <p>Your user agent does not support the HTML5 Video element.</p>
-</video>
+</video>  
+
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/IMG_3181.GIF "Optional title")
