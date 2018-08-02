@@ -11,7 +11,7 @@ tags:
 ### 准备安装包  
 
 序号 | 类目 | 版本  
-- | :-: | :-:   
+:-: | :-: | :-:   
 1 | Python | 3.7.0  
 2 | selenium | 3.13.0  
 3 | Google Chrome | 68.0  
@@ -63,7 +63,13 @@ browser.maximize_window()
 附个Keys按键。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_008.png "Keys按键一览")
 最后想弄个```F11```全屏的，结果不起作用，此处记载，后期寻法解决。到脚本所在目录下执行脚本。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_007.png "执行脚本")
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_007.png "执行脚本")  
+执行效果如下。  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/IMG_3195.GIF "自动化效果")  
 #### 随机启动运行脚本  
 将脚本拷贝到```启动```目录下，就会随机启动执行脚本。
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_009.png "脚本放置到启动目录")  
+### 题外  
+原先的谷歌浏览器版本比较低，所以卸载旧的，出现点击新版本的安装包无反应，结果是卸载不彻底，注册表清理不干净的问题，最后附上清除.reg文件。  
+[谷歌注册表彻底删除.reg](http://p92ijvt1x.bkt.clouddn.com/%E8%B0%B7%E6%AD%8C%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4.reg)  
+
