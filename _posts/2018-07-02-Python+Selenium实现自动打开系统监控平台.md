@@ -60,6 +60,8 @@ time.sleep(1)
 #browser.set_window_size(1280,800)
 browser.maximize_window()  
 ```  
+系统登陆界面部分源代码如下。  
+![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_001.png "系统登陆界面源代码")  
 附个Keys按键。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_008.png "Keys按键一览")
 最后想弄个```F11```全屏的，结果不起作用，此处记载，后期寻法解决。到脚本所在目录下执行脚本。  
