@@ -32,7 +32,7 @@ tags:
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_101.png "选择浏览器对应的webdriver")  
 将下载下来的```chromedriver.exe```文件拷贝到python的安装目录下。  
 ![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_006.png "拷贝到python的安装目录")
-#### 编写脚本  
+### 编写脚本  
 编写脚本，名为chrome.py。  
 ```python  
 from selenium import webdriver
