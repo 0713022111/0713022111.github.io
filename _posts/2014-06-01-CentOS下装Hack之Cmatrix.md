@@ -134,7 +134,7 @@ make[1]: 离开目录“/root/cmatrix-1.2a”
 ```shell  
 [root@localhost cmatrix-1.2a]# cmatrix -B
 ```  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/IMG_3181.GIF "#cmatrix -B效果")  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/IMG_3184.GIF "#cmatrix -B -C red -u 1效果")  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/IMG_3185.GIF "#cmatrix -b -C blue -u 6效果")  
+![Alt text](http://liyufeng.angton.com/IMG_3181.GIF "#cmatrix -B效果")  
+![Alt text](http://liyufeng.angton.com/IMG_3184.GIF "#cmatrix -B -C red -u 1效果")  
+![Alt text](http://liyufeng.angton.com/IMG_3185.GIF "#cmatrix -b -C blue -u 6效果")  
 

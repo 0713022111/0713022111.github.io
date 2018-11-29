@@ -11,16 +11,16 @@ tags:
 svnserve可以通过配置文件来设置用户和口令，以及按路径控制版本库访问权限。  
 &emsp;&emsp;本文详细分析了svnserve配置文件格式，并说明如何使用配置文件控制版本库访问权限。
 本文介绍SVN的版本为1.6.11。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_1.png)  
+![Alt text](http://liyufeng.angton.com/subverison_c_1.png)  
 ## svnserve配置文件概述  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_2.png)  
+![Alt text](http://liyufeng.angton.com/subverison_c_2.png)  
 svnserve配置文件通常由以下3个文本文件组成：
 svn服务配置文件，该文件版本库目录的conf目录下，文件名为```svnserve.conf```。  
 用户名口令文件，该文件名在文件svnserve.conf中指定，缺省为同目录下的```passwd```。  
 权限配置文件，该文件名也在文件svnserve.conf中指定，缺省为同目录下的```authz```。  
 ## svn服务配置文件  
 svn服务配置文件为版本库目录中的文件conf/svnserve.conf。该文件仅由一个[general]配置段组成。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_3.png)  
+![Alt text](http://liyufeng.angton.com/subverison_c_3.png)  
 **[general]**配置段中配置行格式如下:  
 ```shell  
 <配置项> = <值>  
@@ -55,7 +55,7 @@ Password for root:
 realm = repos  
 ```  
 将在svn客户端提示如下：  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_4.png)  
+![Alt text](http://liyufeng.angton.com/subverison_c_4.png)  
 例1：svn服务配置文件conf/svnserve.conf的内容如下：  
 ```shell  
 [general]
@@ -68,7 +68,7 @@ realm = repos
 上述配置文件设定非鉴权用户无权限访问该版本库；鉴权用户可对版本库进行读写；用户名口令文件为conf目录的文件"passwd"；权限配置文件为conf目录的文件"authz"；版本库的认证域为"repos"。  
 ## 用户名口令文件  
 用户名口令文件由svnserve.conf的配置项password-db指定，缺省为conf目录中的passwd。该文件仅由一个[users]配置段组成。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_5.png)  
+![Alt text](http://liyufeng.angton.com/subverison_c_5.png)  
 **[users]**配置段的配置行格式如下：  
 ```shell  
 <用户名> = <口令>
@@ -84,7 +84,7 @@ gubin = gubin_passwd
 该文件中配置了几个用户，其中用户名"dihaiying"和"gubin"。其中" dihuaiying "用户的口令为" dihuaiying_passwd"；" gubin "用户的口令为" gubin_passwd"。
 ## 权限配置文件  
 权限配置文件由svnserve.conf的配置项```authz-db```指定，缺省为conf目录中的authz。该配置文件由一个[groups]配置段和若干个版本库路径权限段组成。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_6.png)  
+![Alt text](http://liyufeng.angton.com/subverison_c_6.png)  
 **[groups]**配置段中配置行格式如下：  
 ```shell  
 <用户组> = <用户列表>  
@@ -105,7 +105,7 @@ gubin = gubin_passwd
 其中，```*```表示任何用户；权限的取值范围为''、'r'和'rw'，''表示对该版本库路径无任何权限，'r'表示具有只读权限，'rw'表示有读写权限。  
 注意：每行配置只能配置单个用户或用户组。  
 例3：权限配置文件conf/authz的内容如下：  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_c_7.png)    
+![Alt text](http://liyufeng.angton.com/subverison_c_7.png)    
 在上述配置文件中，定义了一个用户组"admin"，该用户组包含用户"gubin"和"lixiaolong"。然后定义了2个版本库路径权限段。其中，版本库"admintools"只有用户组"admin"可读写，其他用户无任何权限；版本库"test"中路径"/home/gubin"只有用户" gubin "有读写权限，其他用户只有可读权限。  
 ## 总结  
 在本文中，详细介绍了svnserve程序的3个配置文件。SVN管理员可以通过这3个配置文件设置svnserve服务的用户名口令，以及对版本库路径的访问权限。这些配置文件保存后就立即生效，不需要重启svnserve服务。  

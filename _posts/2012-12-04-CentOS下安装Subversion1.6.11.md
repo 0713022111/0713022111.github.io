@@ -16,7 +16,7 @@ tags:
   
 ## Subversion安装  
 安装svn需要以下几个安装包，如下图  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_1.png )
+![Alt text](http://liyufeng.angton.com/subverison_i_1.png )
 注：其中libproxy-0.3.0-3.el6_3.x86_64.rpm  
 libproxy-bin-0.3.0-3.el6_3.x86_64.rpm  
 libproxy-python-0.3.0-3.el6_3.x86_64.rpm  
@@ -26,13 +26,13 @@ libproxy-python-0.3.0-3.el6_3.x86_64.rpm
 ```  
 ## 测试SVN是否安装成功  
 查看安装目录  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_2.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_2.png )  
 执行:   
 ```shell  
 [root@localhost liyufeng]# svnserve –version  
 ```  
 如果显示版本信息, 则安装成功.如下：  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_3.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_3.png )  
 ## 新建版本库  
 &emsp;&emsp;本系统采用为每个项目单独建一版本库的策略。配置文件，密码文件，访问控制文件等都放在版本库的conf目录下。所以每次开始一个新项目都必须新建一个版本库，并重新配置各配置文件。  
 &emsp;&emsp;还有很重要的一条，要求各组员重新配置客户端，包括服务器版本库路径，本地路径等信息。  
@@ -45,7 +45,7 @@ libproxy-python-0.3.0-3.el6_3.x86_64.rpm
 [root@localhost liyufeng]# svnadmin create /opt/svndata/repos  
 ```  
 执行此命令后svn自动在repos目录下添加必须的配置文件。 
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_4.png )   
+![Alt text](http://liyufeng.angton.com/subverison_i_4.png )   
 需要配置的文件位于conf目录下：```authz```，```passwd```，```svnserve.conf```。  
 关于这三个文件的配置可查看文件 [【ContOS下Subversion配置详析】](https://0713022111.github.io/linux/2012/12/05/CentOS%E4%B8%8BSubversion%E9%85%8D%E7%BD%AE%E8%AF%A6%E6%9E%90/)。  
 注意:版本库不同于一般的文件夹, 直接在操作系统上新建文件无法被SVN识别, 必须使用import等命令将文件导入版库。此为svn内部指令，create用于新建版本库。请使用svn help查看详细说明。  
@@ -61,7 +61,7 @@ libproxy-python-0.3.0-3.el6_3.x86_64.rpm
 ```shell  
 [root@localhost liyufeng]# netstat -tnlp|grep svn  
 ```  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_5.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_5.png )  
 ```shell  
 [root@localhost sysconfig]# cd /etc/sysconfig  
 ```  
@@ -69,14 +69,14 @@ libproxy-python-0.3.0-3.el6_3.x86_64.rpm
 ```shell  
 [root@localhost sysconfig]# vi iptables  
 ```  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_6.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_6.png )  
 重启防火墙  
 ```shell  
 [root@localhost conf]# service iptables restart  
 ```  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_7.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_7.png )  
 ## 测试  
 通过客户端```TortoiseSVN```来测试。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_8.png )  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_9.png )  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/subverison_i_10.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_8.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_9.png )  
+![Alt text](http://liyufeng.angton.com/subverison_i_10.png )  
