@@ -21,17 +21,17 @@ tags:
 ### 安装  
 #### 安装python
 官网下载Python安装包，进行安装。需要对底下的```Add Python3.7 to PATH```进行打勾，然后选择Install Now。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_002.png "安装Python3.7")   
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_003.png "安装Python3.7完成")  
+![Alt text](http://liyufeng.angton.com/selenium_002.png "安装Python3.7")   
+![Alt text](http://liyufeng.angton.com/selenium_003.png "安装Python3.7完成")  
 #### 安装selenium  
 调出命令提示符，使用```pip3 install selenium```命令安装selenium。 
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_004.png "安装selenium")  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_005.png "安装selenium完成")  
+![Alt text](http://liyufeng.angton.com/selenium_004.png "安装selenium")  
+![Alt text](http://liyufeng.angton.com/selenium_005.png "安装selenium完成")  
 #### 安装ChromeDriver  
 [ChromeDriver官方下载点](https://sites.google.com/a/chromium.org/chromedriver/downloads)  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_101.png "选择浏览器对应的webdriver")  
+![Alt text](http://liyufeng.angton.com/selenium_101.png "选择浏览器对应的webdriver")  
 将下载下来的```chromedriver.exe```文件拷贝到python的安装目录下。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_006.png "拷贝到python的安装目录")
+![Alt text](http://liyufeng.angton.com/selenium_006.png "拷贝到python的安装目录")
 ### 编写脚本  
 编写脚本，名为chrome.py。  
 ```python  
@@ -61,17 +61,17 @@ time.sleep(1)
 browser.maximize_window()  
 ```  
 系统登陆界面部分源代码如下。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_001.png "系统登陆界面源代码")  
+![Alt text](http://liyufeng.angton.com/selenium_001.png "系统登陆界面源代码")  
 附个Keys按键。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_008.png "Keys按键一览")
+![Alt text](http://liyufeng.angton.com/selenium_008.png "Keys按键一览")
 最后想弄个```F11```全屏的，结果不起作用，此处记载，后期寻法解决。到脚本所在目录下执行脚本。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_007.png "执行脚本")  
+![Alt text](http://liyufeng.angton.com/selenium_007.png "执行脚本")  
 执行效果如下。  
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/IMG_3195.GIF "自动化效果")  
+![Alt text](http://liyufeng.angton.com/IMG_3195.GIF "自动化效果")  
 #### 随机启动运行脚本  
 将脚本拷贝到```启动```目录下，就会随机启动执行脚本。
-![Alt text](http://p92ijvt1x.bkt.clouddn.com/selenium_009.png "脚本放置到启动目录")  
+![Alt text](http://liyufeng.angton.com/selenium_009.png "脚本放置到启动目录")  
 ### 题外  
 原先的谷歌浏览器版本比较低，所以卸载旧的，出现点击新版本的安装包无反应，结果是卸载不彻底，注册表清理不干净的问题，最后附上清除.reg文件。  
-[谷歌注册表彻底删除.reg](http://p92ijvt1x.bkt.clouddn.com/%E8%B0%B7%E6%AD%8C%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4.reg)  
+[谷歌注册表彻底删除.reg](http://liyufeng.angton.com/%E8%B0%B7%E6%AD%8C%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4.reg)  
 
