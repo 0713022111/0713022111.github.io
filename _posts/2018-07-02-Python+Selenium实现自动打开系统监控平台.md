@@ -7,7 +7,7 @@ categories:
 tags:
  - Python
  - Selenium
----  
+---
 ### 准备安装包  
 
 序号 | 类目 | 版本  
@@ -17,7 +17,7 @@ tags:
 3 | Google Chrome | 68.0  
 4 | ChromeDriver | 2.39  
 5 | os | window7  
-  
+
 ### 安装  
 #### 安装python
 官网下载Python安装包，进行安装。需要对底下的```Add Python3.7 to PATH```进行打勾，然后选择Install Now。  
@@ -39,27 +39,33 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-browser = webdriver.Chrome()
-browser.get("http://XXX.XXX.XXX.XXX:8080/login")
-time.sleep(2)
-name = browser.find_element_by_name("username")
-name.send_keys("USERNAME")
-passwd = browser.find_element_by_name("password")
-passwd.send_keys("PASSWORD")
-login_button = browser.find_elements_by_class_name("button")[0]
-login_button.click()
-time.sleep(2)
-second_url = 'http://XXX.XXX.XXX.XXX:8080/web/#/homeService/callCenter'
-browser.get(second_url)
-body = browser.find_elements_by_tag_name("html")[0]
-time.sleep(1)
-#键盘F11开全屏，谷歌浏览器不起作用，貌似F几的键都不起作用
-#body.send_keys('\ue03b')
-#键盘END键，谷歌浏览器起作用
-#body.send_keys('\ue010')
-#browser.set_window_size(1280,800)
-browser.maximize_window()  
-```  
+
+def main():
+    browser = webdriver.Chrome()
+    browser.get("http://XXX.XXX.XXX.XXX:8080/login")
+    time.sleep(2)
+    name = browser.find_element_by_name("username")
+    name.send_keys("USERNAME")
+    passwd = browser.find_element_by_name("password")
+    passwd.send_keys("PASSWORD")
+    login_button = browser.find_elements_by_class_name("button")[0]
+    login_button.click()
+    time.sleep(2)
+    second_url = 'http://XXX.XXX.XXX.XXX:8080/web/#/homeService/callCenter'
+    browser.get(second_url)
+    body = browser.find_elements_by_tag_name("html")[0]
+    time.sleep(1)
+    #键盘F11开全屏，谷歌浏览器不起作用，貌似F几的键都不起作用
+    #body.send_keys('\ue03b')
+    #键盘END键，谷歌浏览器起作用
+    #body.send_keys('\ue010')
+    #browser.set_window_size(1280,800)
+    browser.maximize_window()  
+    
+    
+if __name__ == '__main__':
+    main()
+```
 系统登陆界面部分源代码如下。  
 ![Alt text](http://liyufeng.angton.com/selenium_001.png "系统登陆界面源代码")  
 附个Keys按键。  
