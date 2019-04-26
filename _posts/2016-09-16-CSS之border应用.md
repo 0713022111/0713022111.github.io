@@ -8,6 +8,41 @@ tags:
  - CSS
  - border
 ---
+## border-width属性定义及用法
+
+在css中，border-width属性是用来设置元素上下左右边框的宽度，它其实是将上下左右[边框宽度](https://www.ggbiji.com/tag/边框宽度/)的四个属性定义在一个声明中，从而减少代码量。
+
+**border-width属性可以有1-4个属性值**
+
+1. 当有4个属性值时，分别表示：上边框宽度、右边框宽度、下边框宽度、左边框宽度；
+2. 有3个属性值时，分别表示：上边框宽度、左右边框宽度、下边框宽度；
+3. 有2个属性值时，分别表示：上下边框宽度、左右边框宽度；
+4. 有1个属性值时，分别表示：上下左右边框宽度；
+
+**如果要单独为元素的一边设置边框宽度，建议使用以下属性：**
+
+- [border-top-width属性](https://www.ggbiji.com/border-top-width.html)：设置元素上边框宽度；
+- [border-right-width属性](https://www.ggbiji.com/border-right-width.html)：设置元素右边框宽度；
+- [border-bottom-width属性](https://www.ggbiji.com/border-bottom-width.html)：设置元素下边框宽度；
+- [border-left-width属性](https://www.ggbiji.com/border-left-width.html)：设置元素左边框宽度；
+
+## border-width属性语法格式
+
+1. border-widt: 值1 值2 值3 值4;（如：border-widt: 10px 9px 8px 7px;）
+2. border-widt: 值1 值2 值3;（如：border-widt: 10px 9px 8px;）
+3. border-widt: 值1 值2;（如：border-widt: 10px 9px;）
+4. border-widt: 值1;（如：border-widt: 10px;）
+
+## border-width属性值说明
+
+- thin：设置细的边框;
+- medium：设置中等的边框;
+- thick ：设置粗的边框;
+- length：自定义边框的宽度;
+- inherit：从父元素继承边框宽度;
+
+### 例子  
+
 **1、正方形**  
 最终效果：
 
