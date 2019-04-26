@@ -482,7 +482,7 @@ CSS代码如下：
 <style>
  #octagon {
     width: 100px;
-    height: 100px;
+    height: 42px;
     background: #22222222;
     position: relative;
 }
@@ -492,10 +492,11 @@ CSS代码如下：
     top: 0;
     left: 0;
     border-bottom: 29px solid #22222222;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
     width: 42px;
     height: 0;
+    top: -29px;
 }
 #octagon:after {
     content: "";
@@ -503,10 +504,11 @@ CSS代码如下：
     bottom: 0;
     left: 0;
     border-top: 29px solid #22222222;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
     width: 42px;
     height: 0;
+    top:42px;
 }
 </style>
 <div id="octagon" style="margin:auto"></div>  
@@ -515,7 +517,7 @@ CSS代码如下：
 ```css
  #octagon {
     width: 100px;
-    height: 100px;
+    height: 42px;
     background: #22222222;
     position: relative;
 }
@@ -525,10 +527,11 @@ CSS代码如下：
     top: 0;
     left: 0;
     border-bottom: 29px solid #22222222;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
     width: 42px;
     height: 0;
+    top: -29px;
 }
 #octagon:after {
     content: "";
@@ -536,10 +539,11 @@ CSS代码如下：
     bottom: 0;
     left: 0;
     border-top: 29px solid #22222222;
-    border-left: 29px solid #eee;
-    border-right: 29px solid #eee;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
     width: 42px;
     height: 0;
+    top:42px;
 }
 ```
 **20、爱心**  
@@ -959,6 +963,8 @@ CSS代码如下：
 }
 </style>
 <div id="cut-diamond" style="margin:auto;"></div>  
+
+
 CSS代码如下：  
 ```css
 #cut-diamond {
