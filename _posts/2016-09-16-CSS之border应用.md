@@ -8,7 +8,7 @@ tags:
  - CSS
  - border
 ---
-**1、正方形**
+**1、正方形**  
 最终效果：
 
 <div style="width:100px;height:100px;background:#22222222;margin:auto;"></div>
@@ -23,7 +23,7 @@ CSS代码如下：
 }
 ```
 
-**2、长方形**
+**2、长方形**  
 最终效果：  
 <div style="width:200px;height:100px;background:#22222222;margin:auto;"></div>  
 
@@ -37,7 +37,7 @@ CSS代码如下：
 }
 ```
 
-**3、圆形**
+**3、圆形**  
 最终效果：
 
 <div style="width:100px;height:100px;background:#22222222;-moz-border-radius: 50px;-webkit-border-radius: 50px;border-radius: 50px;margin:auto;"></div>
@@ -55,7 +55,7 @@ CSS代码如下：
 }
 ```
 
-**4、椭圆**
+**4、椭圆**  
 最终效果：  
 <div style="width:200px;height:100px;background:#22222222;margin:auto;-moz-border-radius: 100px / 50px;-webkit-border-radius: 100px / 50px;border-radius: 100px / 50px;"></div>  
 CSS代码如下：  
@@ -69,7 +69,7 @@ CSS代码如下：
     border-radius: 100px / 50px;
 }
 ```
-**5、上三角**
+**5、上三角**  
 最终效果：  
 
 <div style="width:0;height:0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-bottom: 100px solid #22222222;margin:auto;"></div>   
@@ -83,7 +83,7 @@ CSS代码如下：
     border-bottom: 100px solid #22222222;
 }
 ```
-**6、下三角**
+**6、下三角**  
 最终效果：  
 <div style="width:0;height:0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-top: 100px solid #22222222;margin:auto;"></div>   
 CSS代码如下：  
@@ -96,8 +96,8 @@ CSS代码如下：
     border-top: 100px solid #22222222;
 }
 ```
-**7、左三角**
-最终效果：
+**7、左三角**  
+最终效果：  
 <div style="width:0;height:0;border-top: 50px solid transparent;
     border-right: 100px solid #22222222;
     border-bottom: 50px solid transparent;margin:auto;"></div>   
@@ -111,8 +111,8 @@ CSS代码如下：
     border-bottom: 50px solid transparent;
 }
 ```
-**8、右三角**
-最终效果：
+**8、右三角**  
+最终效果：  
 <div style="width:0;height:0;border-top: 50px solid transparent;
     border-left: 100px solid #22222222;
     border-bottom: 50px solid transparent;margin:auto;"></div>   
@@ -126,8 +126,8 @@ CSS代码如下：
     border-bottom: 50px solid transparent;
 }
 ```
-**9、左上三角**
-最终效果：
+**9、左上三角**  
+最终效果：  
 
 <div style="width:0;height:0;border-top: 100px solid #22222222;
     border-right: 100px solid transparent;margin:auto;"></div>   
@@ -153,7 +153,7 @@ CSS代码如下：
     border-left: 100px solid transparent;
 }
 ```
-**11、左下三角**
+**11、左下三角**  
 最终效果：  
 <div style="width:0;height:0;border-bottom: 100px solid #22222222;
     border-right: 100px solid transparent;margin:auto;"></div>   
@@ -166,7 +166,7 @@ CSS代码如下：
     border-right: 100px solid transparent;
 }
 ```
-**12、右下三角**
+**12、右下三角**  
 最终效果：  
 <div style="width:0;height:0;border-bottom: 100px solid #22222222;
     border-left: 100px solid transparent;margin:auto;"></div>   
@@ -179,7 +179,7 @@ CSS代码如下：
     border-left: 100px solid transparent;
 }
 ```
-**13、平行四边形**
+**13、平行四边形**  
 最终效果：  
 <div style="width: 150px;
     height: 100px;
@@ -200,7 +200,7 @@ CSS代码如下：
     background: #22222222;
 }
 ```
-**14、梯形**
+**14、梯形**  
 最终效果：  
 
 <div style="width: 100px;border-bottom: 100px solid #22222222;border-left: 50px solid transparent;border-right: 50px solid transparent;height: 0;margin:auto;"></div>   
@@ -281,13 +281,13 @@ CSS代码如下：
 }
 #star-five:before {
     border-bottom: 80px solid #22222222;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
     position: absolute;
     height: 0;
     width: 0;
-    top: -44px;
-    left: -60px;
+    top: -60px;
+    left: -65px;
     display: block;
     content: '';
     -webkit-transform: rotate(-35deg);
@@ -333,13 +333,13 @@ CSS代码如下：
 }
 #star-five:before {
     border-bottom: 80px solid #22222222;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
     position: absolute;
     height: 0;
     width: 0;
-    top: -44px;
-    left: -60px;
+    top: -60px;
+    left: -65px;
     display: block;
     content: '';
     -webkit-transform: rotate(-35deg);
@@ -733,6 +733,7 @@ CSS代码如下：
 }
 ```
 **23、食逗人（Pac-Man）**  
+最终效果：  
 <style>
 #pacman {
     width: 0px;
@@ -962,9 +963,8 @@ CSS代码如下：
     border-width: 70px 50px 0 50px;
 }
 </style>
-<div id="cut-diamond" style="margin:auto;"></div>  
-
-
+<div id="cut-diamond" style="margin:auto;"></div>
+<div style="margin-bottom: 70px;"></div>  
 CSS代码如下：  
 ```css
 #cut-diamond {
