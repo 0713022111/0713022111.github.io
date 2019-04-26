@@ -71,6 +71,7 @@ CSS代码如下：
 ```
 **5、上三角**
 最终效果：  
+
 <div style="width:0;height:0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-bottom: 100px solid #22222222;margin:auto;"></div>   
 CSS代码如下：  
 ```css
@@ -215,7 +216,34 @@ CSS代码如下：
 }
 ```
 **15、六角星**
+
+
+
+<style>
+#star-six {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #22222222;
+    position: relative;
+}
+#star-six:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #22222222;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+}
+</style>
+<div id="star-six"></div>
+
 最终效果：  
+
 <div style="border-bottom: 100px solid #22222222;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
