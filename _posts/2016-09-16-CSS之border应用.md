@@ -215,10 +215,8 @@ CSS代码如下：
     width: 100px;
 }
 ```
-**15、六角星**
-
-
-
+**15、六角星**  
+最终效果：  
 <style>
 #star-six {
     width: 0;
@@ -240,16 +238,8 @@ CSS代码如下：
     left: -50px;
 }
 </style>
-<div id="star-six"></div>
+<div id="star-six" style="margin:auto;"></div>  
 
-最终效果：  
-
-<div style="border-bottom: 100px solid #22222222;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    height: 0;
-    width: 100px;margin:auto;"></div>   
-CSS代码如下：  
 ```css
 #star-six {
     width: 0;
@@ -272,338 +262,490 @@ CSS代码如下：
 }
 ```
 **16、五角星**
-最终效果：
-![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/20120117083319815.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
+最终效果：  
+<style>
+#star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: #22222222;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #22222222;
+    border-left: 100px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+#star-five:before {
+    border-bottom: 80px solid #22222222;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+#star-five:after {
+    position: absolute;
+    display: block;
+    color: #22222222;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #22222222;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    content: '';
+}
+</style>
+<div id="star-five" style="margin:auto;"></div>  
+CSS代码如下：  
+```css
+#star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: #22222222;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #22222222;
+    border-left: 100px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+#star-five:before {
+    border-bottom: 80px solid #22222222;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+#star-five:after {
+    position: absolute;
+    display: block;
+    color: #22222222;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #22222222;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    content: '';
+}
 ```
- 1 #star-five {
- 2     margin: 50px 0;
- 3     position: relative;
- 4     display: block;
- 5     color: #22222222;
- 6     width: 0px;
- 7     height: 0px;
- 8     border-right: 100px solid transparent;
- 9     border-bottom: 70px solid #22222222;
-10     border-left: 100px solid transparent;
-11     -moz-transform: rotate(35deg);
-12     -webkit-transform: rotate(35deg);
-13     -ms-transform: rotate(35deg);
-14     -o-transform: rotate(35deg);
-15 }
-16 #star-five:before {
-17     border-bottom: 80px solid #22222222;
-18     border-left: 30px solid transparent;
-19     border-right: 30px solid transparent;
-20     position: absolute;
-21     height: 0;
-22     width: 0;
-23     top: -45px;
-24     left: -65px;
-25     display: block;
-26     content: '';
-27     -webkit-transform: rotate(-35deg);
-28     -moz-transform: rotate(-35deg);
-29     -ms-transform: rotate(-35deg);
-30     -o-transform: rotate(-35deg);
-31 
-32 }
-33 #star-five:after {
-34     position: absolute;
-35     display: block;
-36     color: #22222222;
-37     top: 3px;
-38     left: -105px;
-39     width: 0px;
-40     height: 0px;
-41     border-right: 100px solid transparent;
-42     border-bottom: 70px solid #22222222;
-43     border-left: 100px solid transparent;
-44     -webkit-transform: rotate(-70deg);
-45     -moz-transform: rotate(-70deg);
-46     -ms-transform: rotate(-70deg);
-47     -o-transform: rotate(-70deg);
-48     content: '';
-49 }
+**17、五角大楼**  
+最终效果：  
+
+<style>
+#pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #22222222 transparent;
+}
+#pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #22222222;
+}
+</style>
+<div id="pentagon" style="margin:auto;"></div>
+
+CSS代码如下：  
+```css
+#pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #22222222 transparent;
+}
+#pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #22222222;
+}
 ```
+**18、六边形**  
+最终效果：  
+<style>
+#hexagon {
+    width: 100px;
+    height: 55px;
+    background: #22222222;
+    position: relative;
+}
+#hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #22222222;
+}
+#hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #22222222;
+}
+</style>
+<div id="hexagon" style="margin:auto;"></div>
 
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
-**17、五角大楼**
-最终效果：
-![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/20120117083320782.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
+CSS代码如下：  
+```css
+#hexagon {
+    width: 100px;
+    height: 55px;
+    background: #22222222;
+    position: relative;
+}
+#hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #22222222;
+}
+#hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #22222222;
+}
 ```
- 1 #pentagon {
- 2     position: relative;
- 3     width: 54px;
- 4     border-width: 50px 18px 0;
- 5     border-style: solid;
- 6     border-color: #22222222 transparent;
- 7 }
- 8 #pentagon:before {
- 9     content: "";
-10     position: absolute;
-11     height: 0;
-12     width: 0;
-13     top: -85px;
-14     left: -18px;
-15     border-width: 0 45px 35px;
-16     border-style: solid;
-17     border-color: transparent transparent #22222222;
-18 }
+**19、八角形**  
+最终效果：  
+
+<style>
+ #octagon {
+    width: 100px;
+    height: 100px;
+    background: #22222222;
+    position: relative;
+}
+#octagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid #22222222;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}
+#octagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid #22222222;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}
+</style>
+<div id="octagon" style="margin:auto"></div>  
+
+CSS代码如下：  
+```css
+ #octagon {
+    width: 100px;
+    height: 100px;
+    background: #22222222;
+    position: relative;
+}
+#octagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid #22222222;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}
+#octagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid #22222222;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+    width: 42px;
+    height: 0;
+}
 ```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
-**18、六边形**
-最终效果：
-![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/201201170833207161.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
-```
- 1 #hexagon {
- 2     width: 100px;
- 3     height: 55px;
- 4     background: #22222222;
- 5     position: relative;
- 6 }
- 7 #hexagon:before {
- 8     content: "";
- 9     position: absolute;
-10     top: -25px;
-11     left: 0;
-12     width: 0;
-13     height: 0;
-14     border-left: 50px solid transparent;
-15     border-right: 50px solid transparent;
-16     border-bottom: 25px solid #22222222;
-17 }
-18 #hexagon:after {
-19     content: "";
-20     position: absolute;
-21     bottom: -25px;
-22     left: 0;
-23     width: 0;
-24     height: 0;
-25     border-left: 50px solid transparent;
-26     border-right: 50px solid transparent;
-27     border-top: 25px solid #22222222;
-28 }
-```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
-**19、八角形**
-最终效果：
-![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/20120117083320716.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
-```
- 1 #octagon {
- 2     width: 100px;
- 3     height: 100px;
- 4     background: #22222222;
- 5     position: relative;
- 6 }
- 7 
- 8 #octagon:before {
- 9     content: "";
-10     position: absolute;
-11     top: 0;
-12     left: 0;
-13     border-bottom: 29px solid #22222222;
-14     border-left: 29px solid #eee;
-15     border-right: 29px solid #eee;
-16     width: 42px;
-17     height: 0;
-18 }
-19 
-20 #octagon:after {
-21     content: "";
-22     position: absolute;
-23     bottom: 0;
-24     left: 0;
-25     border-top: 29px solid #22222222;
-26     border-left: 29px solid #eee;
-27     border-right: 29px solid #eee;
-28     width: 42px;
-29     height: 0;
-30 }
-```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
-**20、爱心**
-
-最终效果：
-![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/201201170833216538.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
-```
- 1 #heart {
- 2     position: relative;
- 3     width: 100px;
- 4     height: 90px;
- 5 }
- 6 #heart:before,
- 7 #heart:after {
- 8     position: absolute;
- 9     content: "";
-10     left: 50px;
-11     top: 0;
-12     width: 50px;
-13     height: 80px;
-14     background: #22222222;
-15     -moz-border-radius: 50px 50px 0 0;
-16     border-radius: 50px 50px 0 0;
-17     -webkit-transform: rotate(-45deg);
-18     -moz-transform: rotate(-45deg);
-19     -ms-transform: rotate(-45deg);
-20     -o-transform: rotate(-45deg);
-21     transform: rotate(-45deg);
-22     -webkit-transform-origin: 0 100%;
-23     -moz-transform-origin: 0 100%;
-24     -ms-transform-origin: 0 100%;
-25     -o-transform-origin: 0 100%;
-26     transform-origin: 0 100%;
-27 }
-28 #heart:after {
-29     left: 0;
-30     -webkit-transform: rotate(45deg);
-31     -moz-transform: rotate(45deg);
-32     -ms-transform: rotate(45deg);
-33     -o-transform: rotate(45deg);
-34     transform: rotate(45deg);
-35     -webkit-transform-origin: 100% 100%;
-36     -moz-transform-origin: 100% 100%;
-37     -ms-transform-origin: 100% 100%;
-38     -o-transform-origin: 100% 100%;
-39     transform-origin :100% 100%;
-40 }
-```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
-**21、无穷大符号**
-最终效果：
-![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/201201170833214520.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
-```
- 1 #infinity {
- 2     position: relative;
- 3     width: 212px;
- 4     height: 100px;
- 5 }
- 6 
- 7 #infinity:before,
- 8 #infinity:after {
- 9     content: "";
-10     position: absolute;
-11     top: 0;
-12     left: 0;
-13     width: 60px;
-14     height: 60px;
-15     border: 20px solid #22222222;
-16     -moz-border-radius: 50px 50px 0 50px;
-17     border-radius: 50px 50px 0 50px;
-18     -webkit-transform: rotate(-45deg);
-19     -moz-transform: rotate(-45deg);
-20     -ms-transform: rotate(-45deg);
-21     -o-transform: rotate(-45deg);
-22     transform: rotate(-45deg);
-23 }
-24 
-25 #infinity:after {
-26     left: auto;
-27     right: 0;
-28     -moz-border-radius: 50px 50px 50px 0;
-29     border-radius: 50px 50px 50px 0;
-30     -webkit-transform: rotate(45deg);
-31     -moz-transform: rotate(45deg);
-32     -ms-transform: rotate(45deg);
-33     -o-transform: rotate(45deg);
-34     transform: rotate(45deg);
-35 }
-```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
-**22、鸡蛋**
-最终效果
-![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/201201170833227519.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
-```
-1 #egg {
-2     display:block;
-3     width: 126px;
-4     height: 180px;
-5     background-color: #22222222;
-6     -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
-7     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-8 }
-```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
-**23、食逗人（Pac-Man）**
+**20、爱心**  
+最终效果：  
+<style>
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #22222222;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin :100% 100%;
+}
+</style>
+<div id="heart" style="margin:auto"></div>  
+CSS代码如下：  
+```css
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #22222222;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin :100% 100%;
+}
+```  
+**21、无穷大符号**  
+最终效果：  
+<style>
+#infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid #22222222;
+    -moz-border-radius: 50px 50px 0 50px;
+    border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+    border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+</style>
+<div id="infinity" style="margin:auto;"></div>  
+CSS代码如下：  
+```css
+#infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid #22222222;
+    -moz-border-radius: 50px 50px 0 50px;
+    border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+    border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+```  
+**22、鸡蛋**  
+最终效果  
+<style>
+#egg {
+    display:block;
+    width: 126px;
+    height: 180px;
+    background-color: #22222222;
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+</style>
+<div id="egg" style="margin:auto;"></div>  
+CSS代码如下：  
+```css
+#egg {
+    display:block;
+    width: 126px;
+    height: 180px;
+    background-color: #22222222;
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+```  
+**23、食逗人（Pac-Man）**  
 
 最终效果：![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/201201170833222469.png)
-CSS代码如下：
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
-```
- 1 #pacman {
- 2     width: 0px;
- 3     height: 0px;
- 4     border-right: 60px solid transparent;
- 5     border-top: 60px solid #22222222;
- 6     border-left: 60px solid #22222222;
- 7     border-bottom: 60px solid #22222222;
- 8     border-top-left-radius: 60px;
- 9     border-top-right-radius: 60px;
-10     border-bottom-left-radius: 60px;
-11     border-bottom-right-radius: 60px;
-12 }
-```
-
-[![复制代码](https://common.cnblogs.com/images/copycode.gif)](javascript:void(0);)
-
- 
-
+CSS代码如下：  
+```css
+#pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #22222222;
+    border-left: 60px solid #22222222;
+    border-bottom: 60px solid #22222222;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+```  
 **24、提示对话框**
 最终效果：
 ![CSS画图 <wbr>强悍 <wbr>各种图形 <wbr>果断分享](https://images.cnblogs.com/cnblogs_com/sxwgf/201201/201201170833226024.png)
