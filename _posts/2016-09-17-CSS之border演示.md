@@ -9,5 +9,4 @@ tags:
  - border
 ---
 
-  <iframe src="https://liyufeng.angton.com/Border_new.html" width="700px" height="1000px" frameborder="0" scrolling="no"> </iframe>
-
+  <iframe src="https://liyufeng.angton.com/Border_new2.html" width="800px" height="1000px" frameborder="0" scrolling="no"> </iframe>
