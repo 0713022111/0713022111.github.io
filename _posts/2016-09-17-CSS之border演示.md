@@ -25,9 +25,13 @@ tags:
 	<body>
 	<div class="action-container">
 		<form id="form1" name="form1" method="post" action="">
-			<h2 class="toptit">效果设置区</h2>
+
+## 效果设置区
+
 			<div class="action-properties" id="shadow-container1">
-				<h3>元素宽高设置</h3>
+
+### 元素宽高设置
+
 				<div class="property-container">
 					<label cless="label">宽：</label>
 					<input name="textfield" type="text" class="fd_slider_cn_halfSize fd_tween fd_tween fd_slider_cb_update_Borders.showBorder fd_range_0_10 fd_slider_cn_theSlider" id="bwidth" value="2" maxlength="3" />
@@ -46,7 +50,9 @@ tags:
 				</div>
 			</div>
 			<div class="action-properties" id="shadow-container1">
-				<h3>四边框分别设置</h3>
+
+### 四边框分别设置
+
 				<div class="property-container">
 					<label cless="label">上：</label>
 					<div class="color-box">
@@ -93,7 +99,9 @@ tags:
 				</div>
 			</div>		
 			<div class="action-properties" id="shadow-container1">
-				<h3>四角分别设置</h3>
+
+### 四角分别设置
+
 				<div class="property-container">
 					<label cless="label">左上圆角半径：</label>
 					<input name="textfield" type="text" class="fd_slider_cn_halfSize fd_tween fd_tween fd_slider_cb_update_Borders.showBorder fd_range_0_10 fd_slider_cn_theSlider" id="top-left" value="2" maxlength="3" />
@@ -130,11 +138,15 @@ tags:
 		</form>
 	</div>
 	<div class="Preview-container">
-		<h2 class="toptit">效果展示区</h2>
+
+## 效果展示区
+
 		<div style="height: 400px;">
 			<div id="demo-border"></div>
 		</div>
-		<h2 class="toptit">CSS</h2>
+
+## CSS
+
 		<div id="code2"></div>
 	</div>
 	<script>
