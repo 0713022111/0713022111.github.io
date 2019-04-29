@@ -9,5 +9,5 @@ tags:
  - border
 ---
 
-  <iframe src="https://liyufeng.angton.com/Border_new8.html" height="1560px" frameborder="0" scrolling="no" id="ifr"></iframe><style>@media only screen and (min-width: 700px) { #ifr{width: 700px;}}</style>
+  <iframe src="https://liyufeng.angton.com/Border_new8.html" height="1560px" frameborder="0" scrolling="no" id="ifr"></iframe><style>@media only screen and (min-width: 700px) { #ifr{width: 700px;}} @media only screen and (max-width: 690px) { #ifr{width: 380px;}}</style>
 
