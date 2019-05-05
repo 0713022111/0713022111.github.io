@@ -25,6 +25,8 @@ There are no packages available for installation
 
 ```
 
+### channel_v3.json文件放置本地 ###  
+
 于是网上下载```channel_v3.json```文件于本地，点击```首选项 >> 插件设置 >> Package Control >> 设置-默认```；  
 
 ![](https://liyufeng.angton.com/sublime001.png)
@@ -45,6 +47,8 @@ error: Package Control
 
 There are no packages available for installation
 ```
+
+### 修改schema_version ###  
 
 随后修改```channel_v3.json```文件，将```schema_version```修改为2.0 ；    
 
