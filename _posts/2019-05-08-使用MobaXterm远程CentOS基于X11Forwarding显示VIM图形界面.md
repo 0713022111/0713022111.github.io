@@ -81,4 +81,7 @@ X11UseLocalhost no
 
 ![x11](https://liyufeng.angton.com/x11.png)
 
+![x11](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/x11.png)
+
    
+
