@@ -65,7 +65,7 @@ X11UseLocalhost no
 [root@lykjcloud-002 ~]# xclock
 ```
 
-![xclock](https://liyufeng.angton.com/xclock.png)
+![xclock](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/xclock.png)
 
 #### 安装gui-vim编辑器  
 
@@ -79,9 +79,6 @@ X11UseLocalhost no
 [root@lykjcloud-002 ~]# gvim baidu_jsonp_test.html
 ```
 
-![x11](https://liyufeng.angton.com/x11.png)
-
 ![x11](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/x11.png)
 
    
-
