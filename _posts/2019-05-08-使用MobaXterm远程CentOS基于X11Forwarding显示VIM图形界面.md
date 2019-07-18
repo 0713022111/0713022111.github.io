@@ -64,8 +64,8 @@ X11UseLocalhost no
 ```linux  
 [root@lykjcloud-002 ~]# xclock
 ```
-
-![xclock](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/xclock.png)
+  
+![xclock](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/xclock.png)  
 
 #### 安装gui-vim编辑器  
 
