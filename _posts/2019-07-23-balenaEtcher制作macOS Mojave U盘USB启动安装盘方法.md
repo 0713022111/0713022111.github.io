@@ -1,19 +1,19 @@
+---
 title: etcher制作macOS Mojave U盘USB启动安装盘方法
 description: etcher制作macOS Mojave U盘USB启动安装盘方法
 date: 2019-07-23 22:58:23
 categories:
-
- - macOS
+ - macOS  
 tags:
  - macOS
  - etcher  
-
+---
 #### 本次的镜像及U盘制作工具    
 
-| 名称         | 版本    | 链接                                | 备注        |
+| 名称         | 版本    | 备注                              | 链接      |
 | ------------ | ------- | ----------------------------------- | ----------- |
-| etcher       | 1.5.52  | https://www.balena.io/etcher/       | U盘制作工具 |
-| macOS Mojave | 10.14.6 | https://www.applex.net/pages/macos/ | macOS可引导镜像     |
+| etcher       | 1.5.52  | U盘制作工具     | https://www.balena.io/etcher/ |
+| macOS Mojave | 10.14.6 | macOS可引导镜像 | https://www.applex.net/pages/macos/ |
 
 下载引导镜像。  
 
