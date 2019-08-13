@@ -33,6 +33,6 @@ tags:
 
 #### U 盘安装 macOS Mojave  
 
-按住**Option **键，再按电源键开机，直到出现下图
+按住**Option**键，再按电源键开机，直到出现下图，选择Install macOS Mojave就可以看是安装了。
 
 ![](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/etcher04.png)
