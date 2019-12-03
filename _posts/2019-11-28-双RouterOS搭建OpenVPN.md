@@ -53,7 +53,7 @@ tags:
 
 ![](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/ros_ovpn/ros_ovpn_02.png)
 
- #### 下载证书文件   
+#### 下载证书文件   
 
 ![](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/ros_ovpn/ros_ovpn_03.png)
 
@@ -83,7 +83,7 @@ tags:
 [admin@MikroTik] > /certificate import file-name=cert_export_client-certificate.key
 ```
 
-  #### 创建OpenVPN专用的IP池    
+#### 创建OpenVPN专用的IP池    
 
 ```shell
 [admin@MikroTik] /certificate> /ip pool add name="Open_vpn" ranges=172.10.10.2-172.10.10.254
@@ -110,7 +110,7 @@ tags:
 
 ![](https://dihuaiying.oss-cn-shanghai.aliyuncs.com/ros_ovpn/ros_ovpn_03.png)
 
- #### 添加防火墙允许放行VPN服务   
+#### 添加防火墙允许放行VPN服务   
 
 ```shell  
 [admin@MikroTik] /ip> /ip firewall filter add chain=input protocol=tcp dst-port=1194 action=accept place-before=0 comment="Allow OpenVPN"
